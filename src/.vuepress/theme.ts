@@ -7,24 +7,25 @@ const MR_HOPE_AVATAR =
 
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
-
+  // 全屏功能
+  // fullscreen: true,
+  // 纯净模式
+  // pure: true,
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "万有",
+    url: "https://github.com/xcossin",
   },
 
   iconAssets: "fontawesome-with-brands",
-
+  // 左上角logo
   logo: "/logo.svg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  // 仓库地址
+  repo: "https://github.com/xcossin",
 
   docsDir: "src",
 
-  // navbar
   navbar,
 
-  // sidebar
   sidebar,
 
   footer: "默认页脚",
@@ -35,7 +36,9 @@ export default hopeTheme({
     description: "一个前端开发者",
     intro: "/intro.html",
     medias: {
-      Baidu: "https://example.com",
+      GitHub: "https://github.com/xcossin",
+      Gitee: "https://gitee.com/xcossin",
+      /* Baidu: "https://example.com",
       BiliBili: "https://example.com",
       Bitbucket: "https://example.com",
       Dingding: "https://example.com",
@@ -45,8 +48,6 @@ export default hopeTheme({
       Evernote: "https://example.com",
       Facebook: "https://example.com",
       Flipboard: "https://example.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
       Gitlab: "https://example.com",
       Gmail: "mailto:info@example.com",
       Instagram: "https://example.com",
@@ -66,7 +67,7 @@ export default hopeTheme({
       Whatsapp: "https://example.com",
       Youtube: "https://example.com",
       Zhihu: "https://example.com",
-      MrHope: ["https://mister-hope.com", MR_HOPE_AVATAR],
+      MrHope: ["https://mister-hope.com", MR_HOPE_AVATAR], */
     },
   },
 
@@ -82,8 +83,10 @@ export default hopeTheme({
   },
 
   plugins: {
+    // 是否开启博客模式
     blog: true,
-
+    // 页面信息
+    // pageInfo:'',
     comment: {
       // You should generate and use your own comment service
       provider: "Waline",
@@ -91,6 +94,8 @@ export default hopeTheme({
     },
 
     // all features are enabled for demo, only preserve features you need here
+    /* 启用 Markdown 增强
+       链接：https://plugin-md-enhance.vuejs.press/zh/ */
     mdEnhance: {
       align: true,
       attrs: true,
@@ -155,6 +160,26 @@ export default hopeTheme({
 
       // install @vue/repl before enabling it
       // vuePlayground: true,
+    },
+    // 启动组件
+    components: {
+      // 你想使用的组件
+      components: [
+        "ArtPlayer",
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "PDF",
+        "Replit",
+        "Share",
+        "SiteInfo",
+        "StackBlitz",
+        "VidStack",
+        "VideoPlayer",
+        "XiGua",
+        "YouTube",
+      ],
     },
 
     // uncomment these if you want a PWA
