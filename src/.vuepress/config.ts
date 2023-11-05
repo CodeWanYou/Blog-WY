@@ -4,7 +4,7 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/wy/",
+  base: "/Blog-WY/",
 
   lang: "zh-CN",
   title: "万有的博客",
