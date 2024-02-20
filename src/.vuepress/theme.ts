@@ -100,7 +100,8 @@ export default hopeTheme({
       align: true,
       attrs: true,
       card: true,
-
+      // https://theme-hope.vuejs.press/zh/guide/markdown/echarts.html
+      echarts: true,
       // install chart.js before enabling it
       // chart: true,
 
