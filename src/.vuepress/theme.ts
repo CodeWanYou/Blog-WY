@@ -7,8 +7,9 @@ const MR_HOPE_AVATAR =
 
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
+  darkmode: "switch",
   // 全屏功能
-  // fullscreen: true,
+  fullscreen: true,
   // 纯净模式
   // pure: true,
   author: {
@@ -16,7 +17,19 @@ export default hopeTheme({
     url: "https://github.com/xcossin",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  // iconAssets: "fontawesome-with-brands",
+  // 关键词: "iconfont", "iconify", "fontawesome", "fontawesome-with-brands"
+  iconAssets: "iconfont",
+
+  // 你想要的 URL
+  /* iconAssets: "/base/my/font-icon/resource.js",
+
+  // 上述内容的数组
+  iconAssets: [
+    "/base/my/font-icon/resource.js",
+    "https://example/my/fonr-icon/resouce.css",
+    "fontawesome",
+  ], */
   // 左上角logo
   logo: "/logo.svg",
   // 仓库地址
@@ -100,16 +113,21 @@ export default hopeTheme({
       align: true,
       attrs: true,
       card: true,
-      // https://theme-hope.vuejs.press/zh/guide/markdown/echarts.html
-      echarts: true,
+
       // install chart.js before enabling it
       // chart: true,
 
+      // 启用 vue 交互演示
+      vuePlayground: true,
+
       codetabs: true,
+
+      // 启用 demo 演示
       demo: true,
 
       // install echarts before enabling it
-      // echarts: true,
+      // https://theme-hope.vuejs.press/zh/guide/markdown/echarts.html
+      echarts: true,
 
       figure: true,
 
@@ -156,7 +174,9 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
+      // 添加选项卡支持
       tabs: true,
+
       vPre: true,
 
       // install @vue/repl before enabling it
