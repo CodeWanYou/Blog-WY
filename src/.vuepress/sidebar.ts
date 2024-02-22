@@ -26,6 +26,7 @@ export default sidebar({
   */
   "/echarts": [
     "",
+    'common',
     'bar',
     'line',
   ],

@@ -3,7 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   // 功能演示
-  // "/demo/",
+  "/demo/",
   "/echarts/",
   {
     text: "JavaScript",

@@ -16,7 +16,10 @@ export default hopeTheme({
     name: "万有",
     url: "https://github.com/xcossin",
   },
-
+  // 代码复制
+  copyCode: {
+    showInMobile:true
+  },
   // iconAssets: "fontawesome-with-brands",
   // 关键词: "iconfont", "iconify", "fontawesome", "fontawesome-with-brands"
   iconAssets: "iconfont",
@@ -113,6 +116,9 @@ export default hopeTheme({
       align: true,
       attrs: true,
       card: true,
+
+      // 这就是默认选项，所以你可以直接使用它
+      hint: true,
 
       // install chart.js before enabling it
       // chart: true,
