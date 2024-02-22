@@ -1,7 +1,5 @@
 import { defineUserConfig } from "vuepress";
 // 引入搜索插件
-import { searchProPlugin } from "vuepress-plugin-search-pro";
-import { searchPlugin } from '@vuepress/plugin-search'
 import theme from "./theme.js";
 
 export default defineUserConfig({
